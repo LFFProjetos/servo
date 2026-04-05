@@ -1,0 +1,11 @@
+{
+  "name": "Debian Linux",
+  "image": "mcr.microsoft.com/devcontainers/base:debian", 
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y htop"
+}
